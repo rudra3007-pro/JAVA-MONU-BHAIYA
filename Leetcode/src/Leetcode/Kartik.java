@@ -1,0 +1,29 @@
+package Leetcode;
+
+public class Kartik {
+    public static void main(String[] args) {
+        String str = "abaaaaababaaababa";
+        int k = 2;
+        int flipa = Maximum_len(str , k , 'a');
+        int flipb = Maximum_len(str , k , 'a');
+        System.out.print(Math.max(flipa , flipb));
+    }
+    public static int Maximum_len(String str , int k , char ch){
+        int si=0 , ei= 0 , flip = 0 , ans = 0;
+        while(ei<str.length()){
+            //window grow
+            if(str.charAt(ei) == ch){
+                flip++;
+            }
+            while(flip>k){
+                if(str.charAt(si) == ch){
+                    flip --;
+                }
+                si++;
+            }
+            ans = Math.max(ans , ei-si+1);
+            ei++;
+        }
+        return ans;
+    }
+}
