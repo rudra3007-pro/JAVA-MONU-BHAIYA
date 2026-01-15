@@ -1,3 +1,5 @@
+package Questions;
+
 public class First_occurences {
     public static void main(String[] args) {
         int[] arr = {3,4,2,4,2};

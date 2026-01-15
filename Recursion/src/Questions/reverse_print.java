@@ -1,13 +1,15 @@
-public class Inc {
+package Questions;
+
+public class reverse_print {
     public static void main(String[] args) {
         int n = 5;
-        Incr(n);
+        Rev(n);
     }
-    public static void Incr(int n){
+    public static void Rev(int n){
         if(n==0){
             return;
         }
-        Incr(n-1);
         System.out.println(n);
+        Rev(n-1);
     }
 }

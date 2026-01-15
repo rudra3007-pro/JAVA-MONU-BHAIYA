@@ -1,3 +1,5 @@
+package Questions;
+
 public class apowern {
     public static void main(String[] args) {
         int a = 3;
