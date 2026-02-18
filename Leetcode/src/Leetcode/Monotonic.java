@@ -1,3 +1,5 @@
+package Leetcode;
+
 public class Monotonic {
     public static void main(String[] args){
         int[] arr = {1,5,4,4};
@@ -14,7 +16,7 @@ public class Monotonic {
             j++;
         }
         if(h==true){
-            System.out.print("Monotonic");
+            System.out.print("Leetcode.Monotonic");
         }
         else{
             System.out.print("Not");
